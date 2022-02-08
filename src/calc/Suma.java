@@ -1,11 +1,12 @@
+package calc;
 
 //descripcion clase
 /**
  * La clase Suma permite implementar distintos tipos de metodos relacionados con
  * las operaciones de suma que se realicen en la calculadora. Esta clase no
- * soporta la adición de números negativos.
+ * soporta la adiciï¿½n de nï¿½meros negativos.
  * 
- * @exception IllegalArgumentException cuando se introduzca un número negativo.
+ * @exception IllegalArgumentException cuando se introduzca un nï¿½mero negativo.
  * 
  * @author Daniel Mendoza
  * @version 1.0
@@ -97,46 +98,46 @@ public class Suma {
 
 // metodos
 	/**
-	 * El método SumdosReales calcula la suma de dos números reales y devuelve el
+	 * El mï¿½todo SumdosReales calcula la suma de dos nï¿½meros reales y devuelve el
 	 * resultado.
 	 * 
-	 * @param real1 número real.
-	 * @param real2 número real.
-	 * @return solución.
+	 * @param real1 nï¿½mero real.
+	 * @param real2 nï¿½mero real.
+	 * @return soluciï¿½n.
 	 */
 	public double SumdosReales(double real1, double real2) {
 
 	}
 
 	/**
-	 * El método SumdosEnteros calcula la suma de dos números enteros y devuelve el
+	 * El mï¿½todo SumdosEnteros calcula la suma de dos nï¿½meros enteros y devuelve el
 	 * resultado.
 	 * 
-	 * @param enter1 número entero.
-	 * @param enter2 número entero.
-	 * @return solución.
+	 * @param enter1 nï¿½mero entero.
+	 * @param enter2 nï¿½mero entero.
+	 * @return soluciï¿½n.
 	 */
 	public int SumdosEnteros(int enter1, int enter2) {
 
 	}
 
 	/**
-	 * El método SumtresReales calcula la suma de tres números reales y devuelve el
+	 * El mï¿½todo SumtresReales calcula la suma de tres nï¿½meros reales y devuelve el
 	 * resultado.
 	 * 
-	 * @param real1 número real.
-	 * @param real2 número real.
-	 * @param real3 número real.
-	 * @return solución.
+	 * @param real1 nï¿½mero real.
+	 * @param real2 nï¿½mero real.
+	 * @param real3 nï¿½mero real.
+	 * @return soluciï¿½n.
 	 */
 	public double SumtresReales(double real1, double real2, double real3) {
 
 	}
 
 	/**
-	 * El método ValorAcumulado calcula sumas y almacena el valor total.
+	 * El mï¿½todo ValorAcumulado calcula sumas y almacena el valor total.
 	 * 
-	 * @param acumulador número entero.
+	 * @param acumulador nï¿½mero entero.
 	 */
 	public void ValorAcumulado(int acumulador) {
 

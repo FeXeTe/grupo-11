@@ -1,7 +1,8 @@
+package calc;
 
 /**
- * Esta clase contiene métodos para varios tipos de restas. <br>
- * No admite números negativos.
+ * Esta clase contiene mï¿½todos para varios tipos de restas. <br>
+ * No admite nï¿½meros negativos.
  * 
  * @author Daniel Fechete
  * @version 1.0
@@ -9,19 +10,19 @@
 public class Resta {
 
 	/**
-	 * Atributo que se usa para metódos <br>
-	 * en los que estén implicados números reales.
+	 * Atributo que se usa para metï¿½dos <br>
+	 * en los que estï¿½n implicados nï¿½meros reales.
 	 */
 	private double r1, r2;
 
 	/**
-	 * Atributo que se usa para métodos <br>
-	 * que trabajan con números enteros.
+	 * Atributo que se usa para mï¿½todos <br>
+	 * que trabajan con nï¿½meros enteros.
 	 */
 	private int rs1, rs2, rs3;
 
 	/**
-	 * Atributo que se usa para el método con valor acumulado.
+	 * Atributo que se usa para el mï¿½todo con valor acumulado.
 	 */
 	private int acumulador;
 
@@ -42,7 +43,7 @@ public class Resta {
 	 * @param rs1        atributo de tipo entero para los metodos de su tipo.
 	 * @param rs2        atributo de tipo entero para los metodos de su tipo.
 	 * @param rs3        atributo de tipo entero para los metodos de su tipo.
-	 * @param acumulador Atributo que se usa para el método con valor acumulado.
+	 * @param acumulador Atributo que se usa para el mï¿½todo con valor acumulado.
 	 */
 	public Resta(double r1, double r2, int rs1, int rs2, int rs3, int acumulador) {
 		super();
@@ -103,11 +104,11 @@ public class Resta {
 	}
 
 	/**
-	 * Este método calcula <br>
-	 * la resta de 2 números <b>reales</b>.
+	 * Este mï¿½todo calcula <br>
+	 * la resta de 2 nï¿½meros <b>reales</b>.
 	 * 
-	 * @param r1 Número <b>real</b> que queremos restar.
-	 * @param r2 Número <b>real</b> que queremos restar.
+	 * @param r1 Nï¿½mero <b>real</b> que queremos restar.
+	 * @param r2 Nï¿½mero <b>real</b> que queremos restar.
 	 * @return Devuelve la resta de <b>r1</b> y <b>r2</b>.
 	 */
 	public double dosReales(double r1, double r2) {
@@ -115,11 +116,11 @@ public class Resta {
 	}
 
 	/**
-	 * Este método calcula <br>
-	 * la resta de 2 números <b>enteros</b>.
+	 * Este mï¿½todo calcula <br>
+	 * la resta de 2 nï¿½meros <b>enteros</b>.
 	 * 
-	 * @param rs1 Número <b>entero</b> que queremos restar.
-	 * @param rs2 Número <b>entero</b> que queremos restar.
+	 * @param rs1 Nï¿½mero <b>entero</b> que queremos restar.
+	 * @param rs2 Nï¿½mero <b>entero</b> que queremos restar.
 	 * @return Devuelve la resta de <b>rs1</b> y <b>rs2</b>.
 	 */
 	public int dosEnteros(int rs1, int rs2) {
@@ -127,12 +128,12 @@ public class Resta {
 	}
 
 	/**
-	 * Este método calcula <br>
-	 * la resta de 3 números <b>reales</b>.
+	 * Este mï¿½todo calcula <br>
+	 * la resta de 3 nï¿½meros <b>reales</b>.
 	 * 
-	 * @param rs1 Número <b>real</b> que queremos restar.
-	 * @param rs2 Número <b>real</b> que queremos restar.
-	 * @param rs3 Número <b>real</b> que queremos restar.
+	 * @param rs1 Nï¿½mero <b>real</b> que queremos restar.
+	 * @param rs2 Nï¿½mero <b>real</b> que queremos restar.
+	 * @param rs3 Nï¿½mero <b>real</b> que queremos restar.
 	 * @return Devuelve la resta de <b>rs1</b>, <b>rs2</b> y <b>rs3</b>.
 	 */
 	public double tresReales(int rs1, int rs2, int rs3) {
@@ -140,14 +141,14 @@ public class Resta {
 	}
 
 	/**
-	 * Este método realiza restas acumulando el valor. Al atributo <b>acumulador</b>
-	 * le resta el parámetro que le pasamos <br>
-	 * al método. Aunque no devuelve nada, por cada resta que realicemos mediante
+	 * Este mï¿½todo realiza restas acumulando el valor. Al atributo <b>acumulador</b>
+	 * le resta el parï¿½metro que le pasamos <br>
+	 * al mï¿½todo. Aunque no devuelve nada, por cada resta que realicemos mediante
 	 * <br>
-	 * este método el valor final se acumula y queda guardado en el atributo
+	 * este mï¿½todo el valor final se acumula y queda guardado en el atributo
 	 * <b>acumulador</b>.
 	 * 
-	 * @param menos Parámetro que debe ser un número de tipo entero.
+	 * @param menos Parï¿½metro que debe ser un nï¿½mero de tipo entero.
 	 */
 	public void acumulado(int menos) {
 
