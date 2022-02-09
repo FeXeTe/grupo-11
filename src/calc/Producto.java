@@ -22,7 +22,7 @@ package calc;
  * <br>
  * 
  * @author Alvaro H.
- * @version 1.0
+ * @version 1.1 implentada codigo potencia
  * 
  */
 
@@ -166,6 +166,7 @@ public class Producto {
 	 */
 
 	public int calculatePower(int b1, int e1) {
+		potencia = Math.pow(b1, e1);
 		return potencia;
 	}
 
