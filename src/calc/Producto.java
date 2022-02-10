@@ -22,7 +22,14 @@ package calc;
  * <br>
  * 
  * @author Alvaro H.
- * @version 1.1 implentada codigo potencia
+ * @version 1.1 implentada codigo potencia<br>
+ * 
+ * Otras clases del paquete:<br>
+ * 
+ * @see Suma
+ * @see Resta
+ * @see Producto
+ * @see Cociente
  * 
  */
 
@@ -175,89 +182,6 @@ public class Producto {
 
 	public Producto() {
 
-	}
-
-	// GETTERS AND SETTERS
-	// ----------------------------------------------------------
-
-	public double getP1() {
-		return p1;
-	}
-
-	public void setP1(double p1) {
-		this.p1 = p1;
-	}
-
-	public double getP2() {
-		return p2;
-	}
-
-	public void setP2(double p2) {
-		this.p2 = p2;
-	}
-
-	public double getP3() {
-		return p3;
-	}
-
-	public void setP3(double p3) {
-		this.p3 = p3;
-	}
-
-	public int getP4() {
-		return p4;
-	}
-
-	public void setP4(int p4) {
-		this.p4 = p4;
-	}
-
-	public int getP5() {
-		return p5;
-	}
-
-	public void setP5(int p5) {
-		this.p5 = p5;
-	}
-
-	public int getB1() {
-		return b1;
-	}
-
-	public void setB1(int b1) {
-		this.b1 = b1;
-	}
-
-	public int getE1() {
-		return e1;
-	}
-
-	public void setE1(int e1) {
-		this.e1 = e1;
-	}
-
-	public int getProductoenteros() {
-		return productoenteros;
-	}
-
-	public void setProductoenteros(int productoenteros) {
-		this.productoenteros = productoenteros;
-	}
-
-	public double getProductoreales() {
-		return productoreales;
-	}
-
-	public void setProductoreales(double productoreales) {
-		this.productoreales = productoreales;
-	}
-
-	public int getPotencia() {
-		return potencia;
-	}
-
-	public void setPotencia(int potencia) {
-		this.potencia = potencia;
 	}
 
 }
