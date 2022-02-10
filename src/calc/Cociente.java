@@ -82,7 +82,7 @@ public class Cociente {
 	}
 
 	/**
-	 * Este motodo estaro orientado a resolver la raoz de dos variables de entrada,
+	 * Este motodo estaro orientado a resolver la raiz de dos variables de entrada,
 	 * siendo la primera introducida el radicando y la segunda el indice. Aceptara
 	 * tanto numeros enteros positivos como decimales positivos en funcion de la
 	 * variable escogida. En ningun caso aceptara numeros negativos el radicando,
