@@ -11,44 +11,9 @@ package calc;
  */
 
 public class Cociente {
-
-	/**
-	 * Puede tomar cualquier valor de numero real.
-	 */
-	private double real1;
-
-	/**
-	 * Puede tomar cualquier valor de numero real.
-	 */
-	private double real2;
-
-	/**
-	 * Puede tomar cualquier valor de numero entero.
-	 */
-	private int entero1;
-
-	/**
-	 * Puede tomar cualquier valor de numero entero.
-	 */
-	private int entero2;
-
-	/**
-	 * Constructor que permite establecer el valor de las variables que se usaron en
-	 * cada metodo.
-	 * 
-	 * @param real1   es el valor del numerador o del radicando. Sera mayor que 0
-	 *                cuando se trate de una raiz.
-	 * @param real2   es el valor del denominador o del indice. Sera mayor o menor
-	 *                que 0 cuando se trate de un cociente.
-	 * @param entero1 es el valor del numerador.
-	 * @param entero2 es el valor del denominador, sera mayor o menor que 0.
-	 */
-	public Cociente(double real1, double real2, int entero1, int entero2) {
-		super();
-		this.real1 = real1;
-		this.real2 = real2;
-		this.entero1 = entero1;
-		this.entero2 = entero2;
+	
+	public Cociente() {
+		
 	}
 
 	/**
@@ -127,53 +92,20 @@ public class Cociente {
 	 * pidiendo que se cambie la variable por un numero distinto.
 	 * 
 	 * @param real1 Es el primer valor real para realizar el cálculo.
-	 * @param real2 Es el segundo valor real para realizar el cálculo.
 	 * 
 	 * @return devolvera el resultado de hacer la raiz de la primera variable
 	 *         introducida con un indice igual a la segunda variable. El numero
 	 *         devuelto sera siempre positivo.
 	 * 
 	 */
-	public Double raiz(double real1, double real2) {
+	public Double raiz(double real1) {
 		Double resultado = null;
-		if (real2 > 0) {
-			resultado = Math.pow(real1, inversa(real2));
+		if (real1 >= 0) {
+			resultado = Math.sqrt(real1);
 		} else {
-			System.out.println("Error: el radicando debe ser mayor que cero.");
+			System.out.println("Error: el radicando debe ser mayor o igual que cero.");
 		}
 		return resultado;
-	}
-
-	public double getReal1() {
-		return real1;
-	}
-
-	public void setReal1(double real1) {
-		this.real1 = real1;
-	}
-
-	public double getReal2() {
-		return real2;
-	}
-
-	public void setReal2(double real2) {
-		this.real2 = real2;
-	}
-
-	public double getEntero1() {
-		return entero1;
-	}
-
-	public void setEntero1(int entero1) {
-		this.entero1 = entero1;
-	}
-
-	public double getEntero2() {
-		return entero2;
-	}
-
-	public void setEntero2(int entero2) {
-		this.entero2 = entero2;
 	}
 
 }
