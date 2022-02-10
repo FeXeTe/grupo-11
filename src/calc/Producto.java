@@ -166,7 +166,7 @@ public class Producto {
 	 */
 
 	public int calculatePower(int b1, int e1) {
-		potencia = Math.pow(b1, e1);
+		potencia = (int) Math.pow(b1, e1);
 		return potencia;
 	}
 
