@@ -7,10 +7,11 @@ public class Main {
 		
 		Cociente cociente = new Cociente();
 		
-		cociente.cociente2Enteros(1, 0);
-		cociente.cociente2Reales(2, 0);
-		cociente.inversa(2.1);
-		cociente.raiz(5.3);
+		System.out.println(cociente.cociente2Enteros(1, 0));
+		System.out.println(cociente.cociente2Reales(2, 0));
+		System.out.println(cociente.inversa(2.1));
+		System.out.println(cociente.raiz(5.3));
+		
 		
 	}
 }
