@@ -12,6 +12,12 @@ package calc;
 
 public class Cociente {
 	
+	/** 
+	 * Constructor de la clase.
+	 */
+	public Cociente() {
+		
+	}
 	
 
 	/**
