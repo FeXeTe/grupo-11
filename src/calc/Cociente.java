@@ -2,7 +2,7 @@ package calc;
 
 /**
  * Es un objeto que contiene metodos para resolver la division de variables
- * atendiendo al tipo de numero. Ademas permite calcular raices de variables con
+ * atendiendo al tipo de numero y ademas permite calcular raices de variables con
  * unos parametros a determinar.
  * 
  * 
@@ -12,9 +12,7 @@ package calc;
 
 public class Cociente {
 	
-	public Cociente() {
-		
-	}
+	
 
 	/**
 	 * Este metodo estara orientado a la division de real1 y real2, esto es
