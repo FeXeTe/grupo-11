@@ -22,11 +22,11 @@ package calc;
  * <br>
  * 
  * @author Alvaro H.
- * @version 1.1 implentada codigo potencia<br>
+ * @version 1.2 implentada codigo potencia + metodos completos<br>
  * 
- * Otras clases del paquete:<br>
  * 
- * @see Suma
+ * 
+ * @see Suma 
  * @see Resta
  * @see Producto
  * @see Cociente
@@ -172,7 +172,11 @@ public class Producto {
 	 * @return resultado del metodo.
 	 */
 
-	public int calculatePower(int b1, int e1) {
+	public Integer calculatePower(int b1, int e1) {
+		if (b1 < 0 || e1 < 0) {
+			System.out.println("Valores negativos en base o exponente no admitidos");
+			return null;
+		}
 		potencia = (int) Math.pow(b1, e1);
 		return potencia;
 	}
@@ -181,7 +185,7 @@ public class Producto {
 	// ----------------------------------------------------------
 
 	public Producto() {
-
+		super();
 	}
 
 }
