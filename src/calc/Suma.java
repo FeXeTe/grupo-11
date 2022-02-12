@@ -1,145 +1,121 @@
 package calc;
 
-//descripcion clase
 /**
- * La clase Suma permite implementar distintos tipos de metodos relacionados con
- * las operaciones de suma que se realicen en la calculadora. Esta clase no
- * soporta la adiciï¿½n de nï¿½meros negativos.
  * 
- * @exception IllegalArgumentException cuando se introduzca un nï¿½mero negativo.
+ * La clase Suma permite implementar distintos tipos de metodos relacionados 
+ * con las operaciones de suma que se realicen en la calculadora:
+ * 
+ * <ul>
+ * <li> Suma de dos números reales
+ * <li> Suma de dos números enteros
+ * <li> Suma de tres números reales
+ * <li> Suma con valor acumulado
+ * </ul>
+ * 
+ * <i>
+ *  Esta clase no soporta la adición de números negativos.
+ * </i>
+ * 
  * 
  * @author Daniel Mendoza
- * @version 1.0
+ * @version 1.1
+ * 
+ * @see Resta
+ * @see Producto
+ * @see Cociente
  */
 
 public class Suma {
 
-//parametros de entrada		
-	/**
-	 * Valor numerico real
-	 */
-	private double real1;
-	/**
-	 * Valor numerico real
-	 */
-	private double real2;
-	/**
-	 * Valor numerico real
-	 */
-	private double real3;
 
 	/**
-	 * Valor numerico entero
+	 * Atributo de clase para almacenar el valor acumulado del método acumulador
 	 */
-	private int enter1;
-	/**
-	 * Valor numerico entero
-	 */
-	private int enter2;
+	private double acumulado = 0;
 
-	/**
-	 * Valor acumulado
-	 */
-	private int acumulador;
 
-//constructor 
 	public Suma() {
 
 	}
 
-//getters and setters
-	public double getReal1() {
-		return real1;
-	}
-
-	public void setReal1(double real1) {
-		this.real1 = real1;
-	}
-
-	public double getReal2() {
-		return real2;
-	}
-
-	public void setReal2(double real2) {
-		this.real2 = real2;
-	}
-
-	public double getReal3() {
-		return real3;
-	}
-
-	public void setReal3(double real3) {
-		this.real3 = real3;
-	}
-
-	public int getEnter1() {
-		return enter1;
-	}
-
-	public void setEnter1(int enter1) {
-		this.enter1 = enter1;
-	}
-
-	public int getEnter2() {
-		return enter2;
-	}
-
-	public void setEnter2(int enter2) {
-		this.enter2 = enter2;
-	}
-
-	public int getAcumulador() {
-		return acumulador;
-	}
-
-	public void setAcumulador(int acumulador) {
-		this.acumulador = acumulador;
-	}
-
-// metodos
 	/**
-	 * El mï¿½todo SumdosReales calcula la suma de dos nï¿½meros reales y devuelve el
+	 * El método SumdosReales calcula la suma de dos números reales y devuelve el
 	 * resultado.
 	 * 
-	 * @param real1 nï¿½mero real.
-	 * @param real2 nï¿½mero real.
-	 * @return soluciï¿½n.
+	 * @param real1 primer número real a sumar.
+	 * @param real2 segundo número real a sumar.
+	 * @return el resultado de la suma de los dos números positivos, o un codigo de error si se introduce algún número negativo.
 	 */
-	public double SumdosReales(double real1, double real2) {
+	public double SumdoReales(double real1, double real2) {
+		double solucion;
+		solucion = real1 + real2;
+		if (real1 >= 0 || real2 >= 0)
+		return solucion;
+		else if (real1 < 0 || real2 < 0)
+		System.out.println("No se admiten valores negativos");
+		return 0;
 
 	}
 
 	/**
-	 * El mï¿½todo SumdosEnteros calcula la suma de dos nï¿½meros enteros y devuelve el
+	 * El método SumdosEnteros calcula la suma de dos números enteros y devuelve el
 	 * resultado.
 	 * 
-	 * @param enter1 nï¿½mero entero.
-	 * @param enter2 nï¿½mero entero.
-	 * @return soluciï¿½n.
+	 * @param enter1 primer número entero a sumar.
+	 * @param enter2 segundo número entero a sumar.
+	 * @return el resultado de la suma de los dos números positivos, o un codigo de error si se introduce algún número negativo.
 	 */
 	public int SumdosEnteros(int enter1, int enter2) {
+		int solucion;
+		solucion = enter1 + enter2;
+		if (enter1 >= 0 || enter2 >= 0)
+		return solucion;
+		else if (enter1 < 0 || enter2 < 0)
+		System.out.println("No se admiten valores negativos");
+		return 0;
+		
 
 	}
 
 	/**
-	 * El mï¿½todo SumtresReales calcula la suma de tres nï¿½meros reales y devuelve el
+	 * El método SumtresReales calcula la suma de tres números reales y devuelve el
 	 * resultado.
 	 * 
-	 * @param real1 nï¿½mero real.
-	 * @param real2 nï¿½mero real.
-	 * @param real3 nï¿½mero real.
-	 * @return soluciï¿½n.
+	 * @param real1 primer número real a sumar.
+	 * @param real2 segundo número real a sumar.
+	 * @param real3 tercer número real a sumar.
+	 * @return el resultado de la suma de los tres números positivos, o un codigo de error si se introduce algún número negativo.
 	 */
 	public double SumtresReales(double real1, double real2, double real3) {
+		double solucion;
+		solucion = real1 + real2 + real3;
+		if (real1 >= 0 || real2 >= 0 || real3 >= 0)
+		return solucion;
+	    else if (real1 < 0 || real2 < 0 || real3 < 0)
+	    System.out.println("No se admiten valores negativos");
+		return 0;
+		
 
 	}
 
 	/**
-	 * El mï¿½todo ValorAcumulado calcula sumas y almacena el valor total.
+	 * El método ValorAcumulado calcula sumas y almacena el valor total.
 	 * 
-	 * @param acumulador nï¿½mero entero.
+	 * @param acumulador número entero.
 	 */
-	public void ValorAcumulado(int acumulador) {
+	public void ValorAcumulado(double numero) {
 
 	}
+
+
+	public double getAcumulado() {
+		return acumulado;
+	}
+
+
+	public void setAcumulado(double acumulado) {
+		this.acumulado = acumulado;
+		
+	}
+	
 }
