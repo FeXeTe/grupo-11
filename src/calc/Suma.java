@@ -46,7 +46,7 @@ public class Suma {
 	 * @param real2 segundo número real a sumar.
 	 * @return el resultado de la suma de los dos números positivos, o un codigo de error si se introduce algún número negativo.
 	 */
-	public double SumdoReales(double real1, double real2) {
+	public double SumdosReales(double real1, double real2) {
 		double solucion;
 		solucion = real1 + real2;
 		if (real1 >= 0 || real2 >= 0)
@@ -74,7 +74,6 @@ public class Suma {
 		System.out.println("No se admiten valores negativos");
 		return 0;
 		
-
 	}
 
 	/**
@@ -94,8 +93,7 @@ public class Suma {
 	    else if (real1 < 0 || real2 < 0 || real3 < 0)
 	    System.out.println("No se admiten valores negativos");
 		return 0;
-		
-
+	
 	}
 
 	/**
