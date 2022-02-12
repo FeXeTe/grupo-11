@@ -31,6 +31,18 @@ public class Main {
 		System.out.println();
 		System.out.println("Calculo de potencia, base negativa: " + p1.calculatePower(-19, 5));
 		
+		// TEST CLASE RESTA **
 		
+		Resta resta = new Resta();
+				
+		System.out.println("\n\n===== TEST CLASE RESTA =====\n");
+		System.out.println("Resta de 2 numeros reales");
+		System.out.println(resta.res(123.324, 24.33)+"\n");
+		System.out.println("Resta de 2 numeros enteros");
+		System.out.println(resta.res(50, -20)+"\n");
+		System.out.println("Resta de 3 números reales");
+		System.out.println(resta.res(100, 25, 10)+"\n");
+		resta.acumulado(125);
+		System.out.println(resta.getAcumulador());
 	}
 }
