@@ -98,5 +98,6 @@ public class Resta {
 	 * @param n Parámetro que debe ser un número de tipo entero.
 	 */
 	public void acumulado(int n) {
+		acumulador-=n;
 	}
 }
