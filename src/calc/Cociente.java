@@ -1,146 +1,115 @@
 package calc;
 
 /**
- * La clase Cociente es un objeto que contiene mï¿½todos para resolver la divisiï¿½n
- * de variables atendiendo al tipo de nï¿½mero. Ademï¿½s permite calcular raï¿½zes de
- * variables con unos parï¿½metros a determinar.
+ * Es un objeto que contiene metodos para resolver la division de variables
+ * atendiendo al tipo de numero y ademas permite calcular raices de variables con
+ * unos parametros a determinar.
  * 
  * 
- * @author Hï¿½ctor
+ * @author Hector
  * @version 1.0
  */
 
 public class Cociente {
-
-	/**
-	 * @param real1 puede tomar cualquier valor de nï¿½mero real.
+	
+	/** 
+	 * Constructor de la clase.
 	 */
-	private double real1;
+	public Cociente() {
+		
+	}
+	
 
 	/**
-	 * @param real2 puede tomar cualquier valor de nï¿½mero real.
-	 */
-	private double real2;
-
-	/**
-	 * @param entero1 puede tomar cualquier valor de nï¿½mero entero.
-	 */
-	private int entero1;
-
-	/**
-	 * @param entero2 puede tomar cualquier valor de nï¿½mero entero.
-	 */
-	private int entero2;
-
-	/**
-	 * Este mï¿½todo estarï¿½ orientado a la divisiï¿½n de real1 y real2, esto es
-	 * real1/real2. Por tanto aceptarï¿½ tanto nï¿½meros enteros como decimales,
-	 * positivos y negativos. El denominador serï¿½ menor o mayor que 0, pidiendo que se cambie la
-	 * variable por un nï¿½mero distinto en caso de introducirse.
+	 * Este metodo estara orientado a la division de real1 y real2, esto es
+	 * real1/real2. Por tanto aceptara tanto numeros enteros como decimales,
+	 * positivos y negativos. El denominador sera menor o mayor que 0, pidiendo que
+	 * se cambie la variable por un numero distinto en caso de introducirse.
 	 * 
-	 * @return darï¿½ salida a un nï¿½mero real resultado de la divisiï¿½n de las 2
-	 *         variables.
+	 * @param real1 Es el primer valor real para realizar el cálculo.
+	 * @param real2 Es el segundo valor real para realizar el cálculo.
+	 * 
+	 * @return dara salida a un numero real resultado de la division de las 2
+	 *         variables. Si el parámetro real2 es cero, devolverá null pues la
+	 *         operación no se puede realizar.
 	 * 
 	 */
-
-	public double cociente2Reales(double real1, double real2) {
-
+	public Double cociente2Reales(double real1, double real2) {
+		Double resultado = null;
+		if (real2 != 0) {
+			resultado = real1 / real2;
+		} else {
+			System.out.println("Error: el denominador debe ser distinto de cero.");
+		}
+		return resultado;
 	}
 
 	/**
-	 * Este mï¿½todo estarï¿½ orientado a la divisiï¿½n de entero1 y entero2, esto es
-	 * entero1/entero2. Por tanto aceptarï¿½ sï¿½lo nï¿½meros enteros. El denominador
-	 * siempre serï¿½ menor o mayor que 0, pidiendo que se cambie la variable por un nï¿½mero distinto
-	 * en caso de introducirse.
+	 * Este motodo estaro orientado a la division de entero1 y entero2, esto es
+	 * entero1/entero2. Por tanto aceptara solo numeros enteros. El denominador
+	 * siempre sera menor o mayor que 0, pidiendo que se cambie la variable por un
+	 * numero distinto en caso de introducirse.
 	 * 
-	 * @return darï¿½ salida a un nï¿½mero entero resultado de la divisiï¿½n de las 2
+	 * @param entero1 Es el primer valor real para realizar el cálculo.
+	 * @param entero2 Es el segundo valor real para realizar el cálculo.
+	 * 
+	 * @return dara salida a un numero entero resultado de la division de las 2
 	 *         variables. En caso de que el cociente no resultara entero lo
-	 *         redondearï¿½ al entero mï¿½s prï¿½ximo por exceso.
+	 *         redondeara al entero mas proximo por exceso.
 	 * 
 	 */
-
-	public int cociente2Enteros(int entero1, int entero2) {
-
+	public Integer cociente2Enteros(int entero1, int entero2) {
+		Integer resultado = null;
+		if (entero2 != 0) {
+			resultado = entero1 / entero2;
+		} else {
+			System.out.println("Error: el denominador debe ser distinto de cero.");
+		}
+		return resultado;
 	}
 
 	/**
-	 * Este mï¿½todo estarï¿½ orientado al cï¿½lculo de la inversa de un nï¿½mero, esto es
-	 * 1/real1. Por tanto aceptarï¿½ tanto nï¿½meros enteros como decimales, positivos y
+	 * Este metodo estara orientado al calculo de la inversa de un numero, esto es
+	 * 1/real1. Por tanto aceptara tanto numeros enteros como decimales, positivos y
 	 * negativos, pero siempre menor o mayor que 0.
 	 * 
-	 * @return darï¿½ salida a un nï¿½mero real resultado de la operaciï¿½n.
+	 * @param real1 Es el primer valor real para realizar el cálculo.
+	 * 
+	 * @return dara salida a un numero real resultado de la operacion.
 	 * 
 	 */
-	public double inversa(double real1) {
-
+	public Double inversa(double real1) {
+		Double resultado = null;
+		if (real1 != 0) {
+			resultado = 1 / real1;
+		} else {
+			System.out.println("Error: el denominador debe ser distinto de cero.");
+		}
+		return resultado;
 	}
 
 	/**
-	 * Este mï¿½todo estarï¿½ orientado a resolver la raï¿½z de dos variables de entrada,
-	 * siendo la primera introducida el radicando y la segunda el ï¿½ndice. Aceptarï¿½
-	 * tanto nï¿½meros enteros positivos como decimales positivos en funciï¿½n de la
-	 * variable escogida. En ningï¿½n caso aceptarï¿½ nï¿½meros negativos el radicando,
-	 * pidiendo que se cambie la variable por un nï¿½mero distinto.
+	 * Este motodo estaro orientado a resolver la raiz de dos variables de entrada,
+	 * siendo la primera introducida el radicando y la segunda el indice. Aceptara
+	 * tanto numeros enteros positivos como decimales positivos en funcion de la
+	 * variable escogida. En ningun caso aceptara numeros negativos el radicando,
+	 * pidiendo que se cambie la variable por un numero distinto.
 	 * 
-	 * @return devolverï¿½ el resultado de hacer la raï¿½z de la primera variable
-	 *         introducida con un ï¿½ndice igual a la segunda variable. El nï¿½mero
-	 *         devuelto serï¿½ siempre positivo.
+	 * @param real1 Es el primer valor real para realizar el cálculo.
+	 * 
+	 * @return devolvera el resultado de hacer la raiz de la primera variable
+	 *         introducida con un indice igual a la segunda variable. El numero
+	 *         devuelto sera siempre positivo.
 	 * 
 	 */
-	public class raiz {
-
-	}
-
-	public double getReal1() {
-		return real1;
-	}
-
-	public void setReal1(double real1) {
-		this.real1 = real1;
-	}
-
-	public double getReal2() {
-		return real2;
-	}
-
-	public void setReal2(double real2) {
-		this.real2 = real2;
-	}
-
-	public double getEntero1() {
-		return entero1;
-	}
-
-	public void setEntero1(int entero1) {
-		this.entero1 = entero1;
-	}
-
-	public double getEntero2() {
-		return entero2;
-	}
-
-	public void setEntero2(int entero2) {
-		this.entero2 = entero2;
-	}
-
-	/**
-	 * Constructor que permite establecer el valor de las variables que se usarï¿½n en
-	 * cada mï¿½todo.
-	 * 
-	 * @param real1   es el valor del numerador o del radicando. Serï¿½ mayor que 0
-	 *                cuando se trate de una raï¿½z.
-	 * @param real2   es el valor del denominador o del ï¿½ndice. Serï¿½ mayor o menor
-	 *                que 0 cuando se trate de un cociente.
-	 * @param entero1 es el valor del numerador.
-	 * @param entero2 es el valor del denominador, serï¿½ mayor o menor que 0.
-	 */
-
-	public Cociente(double real1, double real2, int entero1, int entero2) {
-		super();
-		this.real1 = real1;
-		this.real2 = real2;
-		this.entero1 = entero1;
-		this.entero2 = entero2;
+	public Double raiz(double real1) {
+		Double resultado = null;
+		if (real1 >= 0) {
+			resultado = Math.sqrt(real1);
+		} else {
+			System.out.println("Error: el radicando debe ser mayor o igual que cero.");
+		}
+		return resultado;
 	}
 
 }
