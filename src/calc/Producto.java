@@ -17,42 +17,6 @@ package calc;
 public class Producto {
 
 	/**
-	 * Parametro <b>real o entero</b> numero 1, cuyo valor valido esta comprendido
-	 * dentro de los admitidos por su tipo de dato.
-	 */
-
-	private Integer p1;
-
-	/**
-	 * Parametro <b>real o entero</b> numero 2, cuyo valor valido esta comprendido
-	 * dentro de los admitidos por su tipo de dato.
-	 */
-
-	private Integer p2;
-
-	/**
-	 * Parametro <b>real o entero</b> numero 3, cuyo valor valido esta comprendido
-	 * dentro de los admitidos por su tipo de dato.
-	 */
-
-	private Integer p3;
-
-	/**
-	 * Parametro <b>entero</b>, que representa la <b>base</b> de la potencia, cuyo
-	 * valor valido esta comprendido dentro de los admitidos por su tipo de dato.
-	 */
-
-	private int b1;
-
-	/**
-	 * Parametro <b>entero</b>, que representa el <b>exponente</b> de la potencia,
-	 * cuyo valor valido esta comprendido dentro de los admitidos por su tipo de
-	 * dato.
-	 */
-
-	private int e1;
-
-	/**
 	 * Realiza la funcion multiplicacion de 2 parametros recibidos de tipo
 	 * <b>real</b> y devuelve el resultado.
 	 * 
