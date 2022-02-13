@@ -44,5 +44,16 @@ public class Main {
 		System.out.println(resta.res(100, 25, 10)+"\n");
 		resta.acumulado(125);
 		System.out.println(resta.getAcumulador());
+		
+		// TEST CLASE SUMA //
+		
+		Suma suma = new Suma();
+		
+		System.out.println("Suma de dos números reales \nEl resultado es: " + suma.SumdosReales(2.5, 2.5));
+		System.out.println("Suma de dos números enteros \nEl resultado es: " + suma.SumdosEnteros(5, 5));
+		System.out.println("Suma de tres números reales \nEl resultado es: " + suma.SumtresReales(1.75, 2.5, 3.2));
+		suma.setAcumulado(10.1);
+		suma.ValorAcumulado(5.5);
+		System.out.println("Acumulado: " + suma.getAcumulado());
 	}
 }

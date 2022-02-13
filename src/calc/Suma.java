@@ -1,8 +1,7 @@
 package calc;
-
 /**
  * 
- * La clase Suma permite implementar distintos tipos de metodos relacionados 
+ * La clase <u><b>Suma</u></b> permite implementar distintos tipos de metodos relacionados 
  * con las operaciones de suma que se realicen en la calculadora:
  * 
  * <ul>
@@ -18,7 +17,7 @@ package calc;
  * 
  * 
  * @author Daniel Mendoza
- * @version 1.1
+ * @version 1.3
  * 
  * @see Resta
  * @see Producto
@@ -29,7 +28,7 @@ public class Suma {
 
 
 	/**
-	 * Atributo de clase para almacenar el valor acumulado del método acumulador
+	 * Atributo de clase para almacenar el valor acumulado del método ValorAcumulado.
 	 */
 	private double acumulado = 0;
 
@@ -39,7 +38,7 @@ public class Suma {
 	}
 
 	/**
-	 * El método SumdosReales calcula la suma de dos números reales y devuelve el
+	 * El método <u>SumdosReales</u> calcula la suma de dos números reales y devuelve el
 	 * resultado.
 	 * 
 	 * @param real1 primer número real a sumar.
@@ -58,7 +57,7 @@ public class Suma {
 	}
 
 	/**
-	 * El método SumdosEnteros calcula la suma de dos números enteros y devuelve el
+	 * El método <u>SumdosEnteros</u> calcula la suma de dos números enteros y devuelve el
 	 * resultado.
 	 * 
 	 * @param enter1 primer número entero a sumar.
@@ -77,7 +76,7 @@ public class Suma {
 	}
 
 	/**
-	 * El método SumtresReales calcula la suma de tres números reales y devuelve el
+	 * El método <u>SumtresReales</u> calcula la suma de tres números reales y devuelve el
 	 * resultado.
 	 * 
 	 * @param real1 primer número real a sumar.
@@ -97,11 +96,12 @@ public class Suma {
 	}
 
 	/**
-	 * El método ValorAcumulado calcula sumas y almacena el valor total.
+	 * El método <u>ValorAcumulado</u> calcula sumas y almacena el valor total.
 	 * 
-	 * @param acumulador número entero.
+	 * @param parámetro acumulador número real.
 	 */
 	public void ValorAcumulado(double numero) {
+		acumulado += numero;
 
 	}
 
