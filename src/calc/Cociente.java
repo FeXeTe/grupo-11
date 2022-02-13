@@ -8,6 +8,9 @@ package calc;
  * 
  * @author Hector
  * @version 1.0
+ * @see Suma
+ * @see Resta
+ * @see Producto
  */
 
 public class Cociente {
