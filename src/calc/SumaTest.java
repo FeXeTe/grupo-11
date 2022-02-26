@@ -46,6 +46,22 @@ class SumaTest {
 		double resultadoEsperado = 0;
 		assertEquals(resultadoReal, resultadoEsperado);
 	} 
+	
+	@Test
+	void testSumdosReales_3() {
+		System.out.println("testSumdosReales_3");
+		double resultadoReal = suma.SumdosReales(-2.2, 3.3);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	} 
+	
+	@Test
+	void testSumdosReales_4() {
+		System.out.println("testSumdosReales_4");
+		double resultadoReal = suma.SumdosReales(-2.2, -3.3);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	} 
 
 	@Test
 	void testSumdosEnteros_1() {
@@ -67,6 +83,14 @@ class SumaTest {
 	void testSumdosEnteros_3() {
 		System.out.println("testSumdosEnteros_3");
 		int resultadoReal = suma.SumdosEnteros(-2, 3);
+		int resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	}
+	
+	@Test
+	void testSumdosEnteros_4() {
+		System.out.println("testSumdosEnteros_4");
+		int resultadoReal = suma.SumdosEnteros(2, -3);
 		int resultadoEsperado = 0;
 		assertEquals(resultadoReal, resultadoEsperado);
 	}
@@ -98,43 +122,55 @@ class SumaTest {
 	@Test
 	void testSumtresReales_4() {
 		System.out.println("testSumtresReales_4");
+		double resultadoReal = suma.SumtresReales(1.0, -2.0, 8.0);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	}
+	
+	@Test
+	void testSumtresReales_5() {
+		System.out.println("testSumtresReales_5");
+		double resultadoReal = suma.SumtresReales(1.0, 2.0, -8.0);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	}
+	
+	@Test
+	void testSumtresReales_6() {
+		System.out.println("testSumtresReales_6");
+		double resultadoReal = suma.SumtresReales(-1.0, -2.0, 8.0);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	}
+	
+	@Test
+	void testSumtresReales_7() {
+		System.out.println("testSumtresReales_7");
 		double resultadoReal = suma.SumtresReales(1.0, -2.0, -8.0);
 		double resultadoEsperado = 0;
 		assertEquals(resultadoReal, resultadoEsperado);
 	}
 	
+	@Test
+	void testSumtresReales_8() {
+		System.out.println("testSumtresReales_8");
+		double resultadoReal = suma.SumtresReales(-1.0, 2.0, -8.0);
+		double resultadoEsperado = 0;
+		assertEquals(resultadoReal, resultadoEsperado);
+	}
+	
 	@Test	
-	void testValorAcumulado() {	
+	void testValorAcumulado_1() {	
 		System.out.println("testValorAcumulado");
 		suma.ValorAcumulado(10.1);
 		assertEquals(10.1, suma.getAcumulado());		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Test	
+	void testValorAcumulado_2() {	
+		System.out.println("testValorAcumulado");
+		suma.ValorAcumulado(10.1);
+		suma.ValorAcumulado(10.1);
+		assertEquals(20.2, suma.getAcumulado());		
+	}	
 }
