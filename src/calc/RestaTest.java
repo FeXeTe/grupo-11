@@ -10,9 +10,12 @@ import org.junit.jupiter.api.Test;
 
 class RestaTest {
 
+	Resta restaTest = new Resta();
+
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		System.out.println("########## INICIO TEST - Clase Resta ##########");
+
 	}
 
 	@AfterAll
@@ -34,96 +37,97 @@ class RestaTest {
 	@Test
 	void testResDoubleDouble() {
 		System.out.println("testResDoubleDouble");
-		double r1 = 25.50;
-		double r2 = 110.12;
-		if (r1 < 0 && r2 < 0) {
-		} else {
-			double expected = -84.62;
-			double real = (r1 - r2);
-			assertEquals(expected, real);
-		}
-
+		assertEquals(-84.62, restaTest.res(25.5, 110.12));
 	}
+
+	// DEBERIA ARROJAR VALOR NULO POR EXCEPCION EN VEZ DE "0" YA QUE NO SE ADMITEN
+	// AMBOS VALORES NEGATIVOS SEGUN EL METODO
 
 	@Test
 	void testResDoubleDouble2() {
 		System.out.println("testResDoubleDouble2");
-		double r1 = -25.50;
-		double r2 = -110.12;
+		assertEquals(null, restaTest.res(-25.5, -110.12));
+	}
 
-		if (r1 < 0 && r2 < 0) {
-			assertTrue(r1 < 0 && r2 < 0);
-		} else {
-		}
+	@Test
+	void testResDoubleDouble3() {
+		System.out.println("testResDoubleDouble3");
+		assertEquals(-135.62, restaTest.res(-25.5, 110.12));
+	}
 
+	@Test
+	void testResDoubleDouble4() {
+		System.out.println("testResDoubleDouble4");
+		assertEquals(135.62, restaTest.res(25.5, -110.12));
 	}
 
 	@Test
 	void testResIntInt() {
 		System.out.println("testResIntInt");
-		int rs1 = 55;
-		int rs2 = 90;
-
-		if (rs1 < 0 && rs2 < 0) {
-
-		} else {
-			int expected = -35;
-			int real = (rs1 - rs2);
-			assertEquals(expected, real);
-		}
+		assertEquals(-85, restaTest.res(25, 110));
 
 	}
+
+	// DEBERIA ARROJAR VALOR NULO POR EXCEPCION EN VEZ DE "0" YA QUE NO SE ADMITEN
+	// AMBOS VALORES NEGATIVOS SEGUN EL METODO
 
 	@Test
 	void testResIntInt2() {
 		System.out.println("testResIntInt2");
-		int rs1 = -55;
-		int rs2 = -90;
+		assertEquals(null, (Integer) (restaTest.res(-25, -110)));
+	}
 
-		if (rs1 < 0 && rs2 < 0) {
-			assertTrue(rs1 < 0 && rs2 < 0);
-		} else {
-		}
+	@Test
+	void testResIntInt3() {
+		System.out.println("testResIntInt3");
+		assertEquals(-135, restaTest.res(-25, 110));
+	}
 
+	@Test
+	void testResIntInt4() {
+		System.out.println("testResIntInt4");
+		assertEquals(135, restaTest.res(25, -110));
 	}
 
 	@Test
 	void testResIntIntInt() {
 		System.out.println("testResIntIntInt");
-		int rs1 = 55;
-		int rs2 = 90;
-		int rs3 = 130;
-
-		if (rs1 < 0 && rs2 < 0 && rs3 < 0) {
-
-		} else {
-			int expected = -165;
-			int real = (rs1 - rs2 - rs3);
-			assertEquals(expected, real);
-		}
+		assertEquals(-165, restaTest.res(55, 90, 130));
 	}
+
+	// DEBERIA ARROJAR VALOR NULO POR EXCEPCION EN VEZ DE "0" YA QUE NO SE ADMITEN
+	// AMBOS VALORES NEGATIVOS SEGUN EL METODO
 
 	@Test
 	void testResIntIntInt2() {
 		System.out.println("testResIntIntInt2");
-		int rs1 = -55;
-		int rs2 = -90;
-		int rs3 = -130;
+		assertEquals(null, restaTest.res(-55, -90, -130));
+	}
 
-		if (rs1 < 0 && rs2 < 0 && rs3 < 0) {
-			assertTrue(rs1 < 0 && rs2 < 0 && rs3 < 0);
-		} else {
-		}
+	@Test
+	void testResIntIntInt3() {
+		System.out.println("testResIntIntInt3");
+		assertEquals(-275, restaTest.res(-55, 90, 130));
+	}
+
+	@Test
+	void testResIntIntInt4() {
+		System.out.println("testResIntIntInt4");
+		assertEquals(15, restaTest.res(55, -90, 130));
+	}
+
+	@Test
+	void testResIntIntInt5() {
+		System.out.println("testResIntIntInt5");
+		assertEquals(95, restaTest.res(55, 90, -130));
 	}
 
 	@Test
 	void testAcumulado() {
 		System.out.println("testAcumulado");
-		int acumulador = 75;
-		int n = 50;
-		double expected = 25;
-		double real = (acumulador -= n);
-		assertEquals(expected, real);
+		restaTest.setAcumulador(475);
+		restaTest.acumulado(75);
+		assertEquals(400, restaTest.getAcumulador());
 	}
 
 }
