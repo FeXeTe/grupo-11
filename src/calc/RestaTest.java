@@ -74,7 +74,7 @@ class RestaTest {
 	@Test
 	void testResIntInt2() {
 		System.out.println("testResIntInt2");
-		assertEquals(85, restaTest.res(-25, -110));
+		assertEquals(null, (Integer)(restaTest.res(-25, -110)));
 	}
 
 	@Test
@@ -95,10 +95,13 @@ class RestaTest {
 		assertEquals(-165, restaTest.res(55, 90, 130));
 	}
 
+	// DEBERIA ARROJAR VALOR NULO POR EXCEPCION EN VEZ DE "0" YA QUE NO SE ADMITEN
+	// AMBOS VALORES NEGATIVOS SEGUN EL METODO
+	
 	@Test
 	void testResIntIntInt2() {
 		System.out.println("testResIntIntInt2");
-		assertEquals(-95, restaTest.res(-55, -90, -130));
+		assertEquals(null, restaTest.res(-55, -90, -130));
 	}
 
 	@Test
